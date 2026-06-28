@@ -14,31 +14,26 @@ DROP TABLE IF EXISTS Users;
 -- 1. CREATE USERS TABLE
 -- =========================================================================
 CREATE TABLE Users (
-    user_id TYPE,
-    full_name TYPE,
-    email TYPE,
-    role TYPE,
-    phone_number TYPE,
-    
-    -- Write your constraint to make 'user_id' the Primary Key
-    -- Write your constraint to ensure 'email' values are never duplicated
-    -- Write your check constraint to restrict 'role' to specific allowed strings
+    user_id serial primary key,
+    full_name varchar(100),
+    email varchar(200) unique not null,
+    role varchar(50) check(role in ('Ticket Manager', 'Football Fan')),
+    phone_number varchar(50)
 );
 
 -- =========================================================================
 -- 2. CREATE MATCHES TABLE
 -- =========================================================================
 CREATE TABLE Matches (
-    match_id TYPE,
-    fixture TYPE,
-    tournament_category TYPE,
-    base_ticket_price TYPE,
-    match_status TYPE,
-    
-    -- Write your constraint to make 'match_id' the Primary Key
-    -- Write your check constraint to prevent negative ticket prices
-    -- Write your check constraint to restrict 'match_status' values
-);
+    match_id serial primary key,
+    fixture varchar(100) not null,
+    tournament_category varchar(100) not null,
+    base_ticket_price decimal(10,2) not null 
+    check (base_ticket_price >=0),
+    match_status varchar(50) not null check(match_status in
+    ('Available','Selling Fast','Sold Out','Postponed'))
+
+); 
 
 -- =========================================================================
 -- 3. CREATE BOOKINGS TABLE
@@ -87,3 +82,8 @@ INSERT INTO Bookings (booking_id, user_id, match_id, seat_number, payment_status
 (503, 2, 101, 'A-13', 'Confirmed', 150.00),
 (504, 2, 101, NULL, NULL, 150.00),
 (505, 3, 102, 'C-20', 'Pending', 120.00);
+
+
+--  Answers
+
+-- Query 1: Retrieve all upcoming football matches belonging to the 'Champions League' where the match status is 'Available'.
