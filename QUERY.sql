@@ -53,11 +53,37 @@ CREATE TABLE Bookings (
 -- =========================================================================
 -- DATA SEEDING: INSERT SAMPLE DATA INTO USERS
 -- =========================================================================
-INSERT INTO Users (user_id, full_name, email, role, phone_number) VALUES
-(1, 'Tanvir Rahman', 'tanvir@mail.com', 'Football Fan', '+8801711111111'),
-(2, 'Asif Haque', 'asif@mail.com', 'Football Fan', '+8801722222222'),
-(3, 'Sajjad Rahman', 'sajjad@mail.com', 'Ticket Manager', '+8801733333333'),
-(4, 'Jannat Ara', 'jannat@mail.com', 'Football Fan', NULL);
+INSERT INTO Users (full_name, email, role, phone_number) VALUES
+('Tanvir Rahman', 'tanvir@mail.com', 'Football Fan', '+8801711111111'),
+('Asif Haque', 'asif@mail.com', 'Football Fan', '+8801722222222'),
+('Sajjad Rahman', 'sajjad@mail.com', 'Ticket Manager', '+8801733333333'),
+('Jannat Ara', 'jannat@mail.com', 'Football Fan', NULL),
+('Nafis Ahmed', 'nafis@mail.com', 'Football Fan', '+8801744444444'),
+('Mehedi Hasan', 'mehedi@mail.com', 'Football Fan', '+8801755555555'),
+('Farzana Akter', 'farzana@mail.com', 'Football Fan', '+8801766666666'),
+('Rifat Islam', 'rifat@mail.com', 'Football Fan', NULL),
+('Nusrat Jahan', 'nusrat@mail.com', 'Football Fan', '+8801777777777'),
+('Mahmudul Hasan', 'mahmud@mail.com', 'Football Fan', '+8801788888888'),
+('Rakib Hossain', 'rakib@mail.com', 'Football Fan', '+8801799999999'),
+('Sharmin Sultana', 'sharmin@mail.com', 'Football Fan', '+8801811111111'),
+('Imran Kabir', 'imran@mail.com', 'Football Fan', '+8801822222222'),
+('Tasnia Ahmed', 'tasnia@mail.com', 'Football Fan', NULL),
+('Shakib Chowdhury', 'shakib@mail.com', 'Football Fan', '+8801833333333'),
+('Mim Akter', 'mim@mail.com', 'Football Fan', '+8801844444444'),
+('Hasib Rahman', 'hasib@mail.com', 'Football Fan', '+8801855555555'),
+('Sabbir Ahmed', 'sabbir@mail.com', 'Football Fan', '+8801866666666'),
+('Sadia Islam', 'sadia@mail.com', 'Football Fan', NULL),
+('Fahim Karim', 'fahim@mail.com', 'Football Fan', '+8801877777777'),
+('Raihan Hossain', 'raihan@mail.com', 'Football Fan', '+8801888888888'),
+('Ayesha Siddika', 'ayesha@mail.com', 'Football Fan', '+8801899999999'),
+('Muntasir Alam', 'muntasir@mail.com', 'Football Fan', '+8801911111111'),
+('Priyanka Das', 'priyanka@mail.com', 'Football Fan', '+8801922222222'),
+('Zubair Ahmed', 'zubair@mail.com', 'Football Fan', NULL),
+('Nayeem Hasan', 'nayeem@mail.com', 'Football Fan', '+8801933333333'),
+('Tanjina Akter', 'tanjina@mail.com', 'Football Fan', '+8801944444444'),
+('Arif Mahmood', 'arif@mail.com', 'Ticket Manager', '+8801955555555'),
+('Lubna Yasmin', 'lubna@mail.com', 'Ticket Manager', '+8801966666666'),
+('Kamrul Islam', 'kamrul@mail.com', 'Ticket Manager', '+8801977777777');
 
 -- =========================================================================
 -- DATA SEEDING: INSERT SAMPLE DATA INTO MATCHES
