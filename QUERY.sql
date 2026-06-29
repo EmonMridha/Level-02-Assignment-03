@@ -123,12 +123,37 @@ INSERT INTO Matches (fixture, tournament_category, base_ticket_price, match_stat
 -- =========================================================================
 -- DATA SEEDING: INSERT SAMPLE DATA INTO BOOKINGS
 -- =========================================================================
-INSERT INTO Bookings (booking_id, user_id, match_id, seat_number, payment_status, total_cost) VALUES
-(501, 1, 101, 'A-12', 'Confirmed', 150.00),
-(502, 1, 102, 'B-04', 'Confirmed', 120.00),
-(503, 2, 101, 'A-13', 'Confirmed', 150.00),
-(504, 2, 101, NULL, NULL, 150.00),
-(505, 3, 102, 'C-20', 'Pending', 120.00);
+INSERT INTO Bookings (user_id, match_id, seat_number, payment_status, total_cost) VALUES
+(1, 1, 'A-12', 'Confirmed', 150.00),
+(1, 2, 'B-04', 'Confirmed', 120.00),
+(2, 1, 'A-13', 'Confirmed', 150.00),
+(2, 5, NULL, 'Pending', 80.00),
+(3, 2, 'C-20', 'Pending', 120.00),
+(4, 3, 'D-05', 'Confirmed', 130.00),
+(5, 4, 'A-22', 'Confirmed', 90.00),
+(6, 6, 'B-18', 'Refunded', 110.00),
+(7, 7, 'C-11', 'Confirmed', 125.00),
+(8, 8, 'A-09', 'Cancelled', 95.00),
+(9, 9, 'D-16', 'Confirmed', 100.00),
+(10, 10, 'B-25', 'Pending', 85.00),
+(11, 11, 'C-08', 'Confirmed', 75.00),
+(12, 12, 'A-15', 'Confirmed', 90.00),
+(13, 13, 'D-03', 'Confirmed', 80.00),
+(14, 14, 'B-12', 'Pending', 95.00),
+(15, 15, 'C-19', 'Confirmed', 70.00),
+(16, 16, 'A-30', 'Confirmed', 110.00),
+(17, 17, 'B-09', 'Confirmed', 140.00),
+(18, 18, 'D-14', 'Confirmed', 105.00),
+(19, 19, 'C-06', 'Refunded', 85.00),
+(20, 20, 'A-02', 'Pending', 88.00),
+(21, 21, 'B-10', 'Confirmed', 78.00),
+(22, 22, 'C-17', 'Confirmed', 92.00),
+(23, 23, 'D-21', 'Cancelled', 98.00),
+(24, 24, 'A-08', 'Confirmed', 87.00),
+(25, 25, 'B-26', 'Confirmed', 93.00),
+(26, 26, 'C-13', 'Pending', 102.00),
+(27, 27, 'D-07', 'Confirmed', 89.00),
+(28, 28, 'A-19', 'Confirmed', 72.00);
 
 
 --  Answers
