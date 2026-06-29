@@ -88,12 +88,37 @@ INSERT INTO Users (full_name, email, role, phone_number) VALUES
 -- =========================================================================
 -- DATA SEEDING: INSERT SAMPLE DATA INTO MATCHES
 -- =========================================================================
-INSERT INTO Matches (match_id, fixture, tournament_category, base_ticket_price, match_status) VALUES
-(101, 'Real Madrid vs Barcelona', 'Champions League', 150.00, 'Available'),
-(102, 'Man City vs Liverpool', 'Premier League', 120.00, 'Selling Fast'),
-(103, 'Bayern Munich vs PSG', 'Champions League', 130.00, 'Available'),
-(104, 'AC Milan vs Inter Milan', 'Serie A', 90.00, 'Sold Out'),
-(105, 'Juventus vs Roma', 'Serie A', 80.00, 'Available');
+INSERT INTO Matches (fixture, tournament_category, base_ticket_price, match_status) VALUES
+('Real Madrid vs Barcelona', 'Champions League', 150.00, 'Available'),
+('Manchester City vs Liverpool', 'Premier League', 120.00, 'Selling Fast'),
+('Bayern Munich vs PSG', 'Champions League', 130.00, 'Available'),
+('AC Milan vs Inter Milan', 'Serie A', 90.00, 'Sold Out'),
+('Juventus vs Roma', 'Serie A', 80.00, 'Available'),
+('Chelsea vs Arsenal', 'Premier League', 110.00, 'Available'),
+('Tottenham Hotspur vs Manchester United', 'Premier League', 125.00, 'Selling Fast'),
+('Borussia Dortmund vs RB Leipzig', 'Bundesliga', 95.00, 'Available'),
+('Atletico Madrid vs Sevilla', 'La Liga', 100.00, 'Available'),
+('Napoli vs Lazio', 'Serie A', 85.00, 'Available'),
+('Ajax vs PSV Eindhoven', 'Eredivisie', 75.00, 'Selling Fast'),
+('Benfica vs Porto', 'Primeira Liga', 90.00, 'Sold Out'),
+('Celtic vs Rangers', 'Scottish Premiership', 80.00, 'Available'),
+('Galatasaray vs Fenerbahce', 'Turkish Super Lig', 95.00, 'Selling Fast'),
+('Flamengo vs Palmeiras', 'Brasileirão', 70.00, 'Available'),
+('Boca Juniors vs River Plate', 'Argentine Primera División', 110.00, 'Sold Out'),
+('Al Nassr vs Al Hilal', 'Saudi Pro League', 140.00, 'Selling Fast'),
+('Inter Miami vs LA Galaxy', 'Major League Soccer', 105.00, 'Available'),
+('Paris FC vs Marseille', 'Ligue 1', 85.00, 'Available'),
+('Lyon vs Monaco', 'Ligue 1', 88.00, 'Postponed'),
+('Sporting CP vs Braga', 'Primeira Liga', 78.00, 'Available'),
+('Leicester City vs Aston Villa', 'Premier League', 92.00, 'Available'),
+('Everton vs Newcastle United', 'Premier League', 98.00, 'Selling Fast'),
+('Valencia vs Villarreal', 'La Liga', 87.00, 'Available'),
+('Real Sociedad vs Athletic Bilbao', 'La Liga', 93.00, 'Sold Out'),
+('Eintracht Frankfurt vs Bayer Leverkusen', 'Bundesliga', 102.00, 'Available'),
+('Fiorentina vs Atalanta', 'Serie A', 89.00, 'Available'),
+('Club Brugge vs Anderlecht', 'Belgian Pro League', 72.00, 'Available'),
+('FC Copenhagen vs Midtjylland', 'Danish Superliga', 68.00, 'Selling Fast'),
+('Shakhtar Donetsk vs Dynamo Kyiv', 'Ukrainian Premier League', 76.00, 'Postponed');
 
 -- =========================================================================
 -- DATA SEEDING: INSERT SAMPLE DATA INTO BOOKINGS
