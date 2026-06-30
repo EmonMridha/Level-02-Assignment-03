@@ -155,7 +155,6 @@ INSERT INTO Bookings (user_id, match_id, seat_number, payment_status, total_cost
 (27, 27, 'D-07', 'Confirmed', 89.00),
 (28, 28, 'A-19', 'Confirmed', 72.00);
 
-
 --  Answers
 
 -- Query 1: Retrieve all upcoming football matches belonging to the 'Champions League' where the match status is 'Available'.
@@ -176,3 +175,12 @@ from bookings where payment_status is null
 
 -- Query 4: Retrieve match booking details along with the User's full name and the scheduled Match fixture teams.
 
+select booking_id,full_name,fixture,total_cost from users
+  inner join bookings on users.user_id=bookings.user_id inner join 
+matches on matches.match_id = bookings.match_id
+
+-- Query 5: Display a comprehensive list of all users and their booking IDs, ensuring that fans who have never bought a ticket are still listed.
+
+select users.user_id,full_name,booking_id 
+  from users left join bookings 
+  on users.user_id=bookings.user_id
